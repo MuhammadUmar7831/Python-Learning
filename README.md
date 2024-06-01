@@ -1,6 +1,6 @@
 # Python Learning with Code With Harry
 
-![Code With Harry Logo](https://yt3.ggpht.com/ytc/AAUvwngOR9zv-KwWm3PcSgpbjA2uJm5lWg6tF4BZB7XFrA=s88-c-k-c0x00ffffff-no-rj)
+![Code With Harry Logo](https://yt3.googleusercontent.com/ytc/AIdro_kNaumymcxYzV7_n7_VRbQ2TRlIbU2w5csOMN0cH8jiED8=s176-c-k-c0x00ffffff-no-rj)
 
 Welcome to my Python learning journey inspired by the tutorials from the YouTube channel **Code With Harry**. This repository serves as my practice ground, where I implement the concepts learned from the videos.
 
