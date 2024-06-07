@@ -22,4 +22,3 @@ If you're also learning Python or want to revisit some concepts, feel free to ex
 If you have any questions, suggestions, or just want to chat about Python or programming in general, feel free to reach out to me. You can also connect with me on social media or GitHub.
 
 Happy coding!
-Currently on Pause.
