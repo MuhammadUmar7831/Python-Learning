@@ -1,4 +1,26 @@
+
+
 """
+#video39
+score = 0
+
+questions = ["Question1?", "Question2?", "Question3?", "Question4?"]
+options = [['option1', 'option2', 'option3', 'option4'], 
+           ['option1', 'option2', 'option3', 'option4'], 
+           ['option1', 'option2', 'option3', 'option4'], 
+           ['option1', 'option2', 'option3', 'option4']]
+correctOptions = ['option1', 'option2', 'option3', 'option4']
+
+for i in range(len(questions)):
+    print(questions[i])
+    for j in range(len(options[i])):
+        print(f"{j + 1}. {options[i][j]}")
+    ans = int(input('Your Answer? (1/2/3/4) => ')) - 1
+    if correctOptions[i] == options[i][ans]:
+        score += 2
+
+print(f"Your final score is: {score}")
+
 #video38
 a = input("Enter any value between 5 and 9 => ")
 if (a == 'quit'):
