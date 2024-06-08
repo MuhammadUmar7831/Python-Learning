@@ -1,7 +1,15 @@
-#video38
-
-
 """
+#video38
+a = input("Enter any value between 5 and 9 => ")
+if (a == 'quit'):
+    exit()
+else:
+    a = int(a)
+    if (a < 5 or a > 9):
+        raise ValueError("Value should be between 5 and 9")
+    else:
+        print(a, ' is your number.')
+
 #video37
 try:
     l = [1, 5, 6, 7]
