@@ -1,6 +1,35 @@
-
-
 """
+#video40
+import random
+import string
+
+def encode(_str):
+    if type(_str) == str:
+        size = len(_str)
+        if size < 3:
+            return _str[::-1]
+        else:
+            random_prefix = ''.join(random.choice(string.ascii_letters) for _ in range(3))
+            random_suffix = ''.join(random.choice(string.ascii_letters) for _ in range(3))
+            result = random_prefix +  _str[1::] + _str[0]  + random_suffix
+            return result
+    else:
+        print('Please Provide string data')
+
+def decode(_str):
+    if type(_str) == str:
+        size = len(_str)
+        if size < 3:
+            return _str[::-1]
+        else:
+            return _str[-4] + _str[3:-4]
+    else:
+        print('Please Provide string data')
+
+print(decode(encode("Harry")))
+print(decode(encode("no")))
+
+
 #video39
 score = 0
 
