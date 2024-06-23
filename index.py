@@ -1,4 +1,10 @@
 """
+#video 45
+#__name__
+from wellcome import wellcome
+
+wellcome()
+
 #video 44
 # How import works in Python
 from pandas import __version__
