@@ -1,4 +1,13 @@
 """
+#video 41
+#short hand if else
+a = 90
+b = 90
+c = 10 if a == b else 9
+print(c)
+
+print("a > b") if a > b else print("a == b") if a == b else print("b > a")
+
 #video40
 import random
 import string
@@ -19,16 +28,12 @@ def encode(_str):
 def decode(_str):
     if type(_str) == str:
         size = len(_str)
-        if size < 3:
-            return _str[::-1]
-        else:
-            return _str[-4] + _str[3:-4]
+        return _str[::-1] if size < 3 else _str[-4] + _str[3:-4]
     else:
         print('Please Provide string data')
 
 print(decode(encode("Harry")))
 print(decode(encode("no")))
-
 
 #video39
 score = 0
