@@ -1,5 +1,14 @@
 """
 #video 41
+#enumerate function
+def table(_num):
+    natural_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    for index, num in enumerate(natural_numbers):
+        print( f'{_num} x {natural_numbers[index]}  = {_num * num }')
+
+table(14)
+
+#video 41
 #short hand if else
 a = 90
 b = 90
