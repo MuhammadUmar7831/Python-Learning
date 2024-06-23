@@ -1,4 +1,15 @@
 """
+#video 44
+# How import works in Python
+from pandas import __version__
+from math import sqrt, __name__ as name
+
+
+print(__version__)
+print(sqrt(9))
+print(name)
+
+
 #video 41
 #enumerate function
 def table(_num):
