@@ -1,4 +1,18 @@
 """
+#video 52
+#Lambda functions in Python
+
+cal = lambda fn, val: fn(val)
+
+avg = lambda a,b,c: (a + b + c) / 2
+square = lambda x: x*x
+cube = lambda x: x*x*x
+
+print(cal(cube,2))
+print(cal(square,2))
+print(avg(1,2,3))
+
+
 #video 51
 #seek(), tell() and other functions
 with open('marks.txt', 'r') as f:
