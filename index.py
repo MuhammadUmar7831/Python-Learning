@@ -1,4 +1,49 @@
 """
+#video 55
+#Rock Paper Scissor
+import random
+import os
+
+judge = {
+    'r': 'p',
+    'p': 's',
+    's': 'r'
+}
+score = 0
+timeLine = []
+
+def clear_console():
+    # Clear console based on the operating system
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+while True:
+    choice = input('Press:\nr for rock🪨\np for paper📝\ns for scissor✂️\nanyother key to exit\nEnter your choice\n')
+    computerChoice = random.choice(['r', 'p', 's'])
+    if choice == computerChoice:
+        print(f"you: {choice} | python: {computerChoice}")
+        timeLine.append({'Draw', 0})
+        print('Draw')
+    elif choice == 'r' or choice == 'p' or choice == 's':
+        print(f"you: {choice} | python: {computerChoice}")
+        if judge[choice] == computerChoice:
+            timeLine.append({'Lose', -1})
+            print('Lose')
+            score = score - 1
+        else:
+            timeLine.append({'Win', 1})
+            print('Win')
+            score = score + 1
+    else:
+        clear_console()
+        break
+    input("Press Enter to continue...")
+    clear_console()
+
+print(f"Total Score: {score}")
+print(f"History: {timeLine}")
+
+
 #video 54
 #'is' vs '==' in Python
 
