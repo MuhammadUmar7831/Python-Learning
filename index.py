@@ -1,4 +1,14 @@
 """
+#vid 48
+#local vs global variables
+x = 10
+def func():
+    global x
+    x = 5
+print(f"global x before function call {x}")
+func()
+print(f"global x after function call {x}")
+
 #vid 47
 #vid40/Exercise 4 inhancement
 import random
