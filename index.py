@@ -1,4 +1,16 @@
 """
+#video 51
+#seek(), tell() and other functions
+with open('marks.txt', 'r') as f:
+    f.seek(10)
+    print(f.tell())
+    print(f.read(8))
+
+with open('marks.txt', 'a') as f:
+    f.write("57,23,34\n27,75,13\n49,87,83\n42,32,83")
+    f.truncate(28)
+
+
 #video 50
 #read(), readlines() and other methods
 def showMarks():
