@@ -1,4 +1,14 @@
 """
+#vid 49
+#File IO in Python
+f = open('wellcome.py')
+text = f.read()
+print(text)
+f.close()
+
+with open('wellcome.py', 'a') as append:
+    append.write("#text from tutorial 49")
+
 #vid 48
 #local vs global variables
 x = 10
