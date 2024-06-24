@@ -1,4 +1,22 @@
 """
+#video 53
+#Map, Filter and Reduce in Python
+from functools import reduce
+
+l = [1,2,3,4,5]
+cube = lambda x: x*x*x
+cubedL = map(cube, l)
+print(list(cubedL))
+
+qualifier = lambda x: True if x % 2 == 1 else False
+
+oddL = filter(qualifier, l)
+print(list(oddL))
+
+reducedL = reduce(lambda x, y: x + y, l)
+print(reducedL)
+
+
 #video 52
 #Lambda functions in Python
 
