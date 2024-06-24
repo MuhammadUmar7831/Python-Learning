@@ -1,4 +1,24 @@
 """
+#video 54
+#'is' vs '==' in Python
+
+a = "4"
+b = 4
+#is compare exact memory
+#== compare value 
+print(a is b)#False
+print(a == b)#Fasle
+
+a = 1
+b = 1
+print(a is b)#True beacuse the constant is immutable and python store both of them at same memory location same for all immutable datatypes like tuples, string
+print(a == b)#True beacuse the constant is immutable and python store both of them at same memory location same for all immutable datatypes like tuples, string
+
+a = [1,2,3]
+b = [1,2,3]
+print(a is b)#False
+print(a == b)#True list not immutable so a and b are copy of each other at different memory locations
+
 #video 53
 #Map, Filter and Reduce in Python
 from functools import reduce
