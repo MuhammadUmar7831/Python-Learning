@@ -1,4 +1,54 @@
 """
+#vid 47
+#vid40/Exercise 4 inhancement
+import random
+import string
+
+def encode(_str):
+    if type(_str) == str:
+        size = len(_str)
+        if size < 3:
+            return _str[::-1]
+        else:
+            random_prefix = ''.join(random.choice(string.ascii_letters) for _ in range(3))
+            random_suffix = ''.join(random.choice(string.ascii_letters) for _ in range(3))
+            result = random_prefix +  _str[1::] + _str[0]  + random_suffix
+            return result
+    else:
+        print('Please Provide string data')
+
+def decode(_str):
+    if type(_str) == str:
+        size = len(_str)
+        return _str[::-1] if size < 3 else _str[-4] + _str[3:-4]
+    else:
+        print('Please Provide string data')
+
+def enCodeStr(_str):
+    words = _str.split(" ")
+    enCodedStr = []
+    for word in words:
+        rtn = encode(word)
+        enCodedStr.append(rtn)
+    return " ".join(enCodedStr)
+
+def deCodeStr(_str):
+    words = _str.split(" ")
+    deCodedStr = []
+    for word in words:
+        rtn = decode(word)
+        deCodedStr.append(rtn)
+    return " ".join(deCodedStr)
+    
+
+_str = input("Enter your string:\n  ")
+a = enCodeStr(_str)
+b = deCodeStr(a)
+print(f"encoded: {a}")
+print(f"decoded: {b}")
+
+
+
 #video 46
 #os module
 import os
