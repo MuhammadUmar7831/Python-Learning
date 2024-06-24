@@ -1,4 +1,33 @@
 """
+#video 50
+#read(), readlines() and other methods
+def showMarks():
+    with open('marks.txt', 'r') as f:
+        i = 1
+        while True:
+            line = f.readline()
+            if not line:
+                break
+            else:
+                marks = line.split(",")
+                m1 = int(marks[0])
+                m2 = int(marks[1])
+                m3 = int(marks[2])
+                print(f"Student {i} SST Marks: {m1}/110 ({round(m1/100 * 110)}%)")
+                print(f"Student {i} Math Marks: {m2}/110 ({round(m1/100 * 110)}%)")
+                print(f"Student {i} Science Marks: {m3}/110 ({round(m1/100 * 110)}%)")
+                print("\n")
+            i+=1
+
+def addMarks(marks):
+    with open('marks.txt', 'a') as f:
+        f.writelines(f"\n{marks[0]},{marks[1]},{marks[2]}")
+
+# marks= [42, 32, 83]
+# addMarks(marks)
+showMarks()
+
+
 #vid 49
 #File IO in Python
 f = open('wellcome.py')
