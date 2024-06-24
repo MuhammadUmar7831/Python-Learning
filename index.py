@@ -1,4 +1,10 @@
 """
+#video 46
+#os module
+import os
+
+print(os.__file__)
+
 #video 45
 #__name__
 from wellcome import wellcome
