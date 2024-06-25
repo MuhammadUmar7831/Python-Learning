@@ -1,4 +1,24 @@
 """
+#video 64
+#Exercise 6
+
+class Library:
+    def __init__(self, books):
+        self.books = books
+        self.no_books = len(books)
+    
+    def showBooks(self):
+        for book in self.books:
+            print(book)
+    
+    def checkValidNOBooks(self):
+        return len(self.books) == self.no_books
+
+a = Library(["Book1", "Book2", "Book3", "Book4"])
+a.no_books = 5
+a.showBooks()
+print(a.checkValidNOBooks())
+
 #video 63
 #shoutouts + exercise 5 solution
 
