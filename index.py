@@ -1,4 +1,18 @@
 """
+#video 62
+#Access Method in Python
+
+class Employee:
+    def __init__(self, name, id):
+        self.__name = name
+        self.id = id
+
+a = Employee("Muhammad Umar", 7831)
+print(a.id)# by default public
+# print(a.__name) #will give error because __name is made private here and can't be access directly
+print(a._Employee__name) #but can be accessed indirectly
+#_varname convention for protected but python do not enforce access modifire it only do mangling on __ thing
+
 #video 61
 #Inheritance in Python
 
