@@ -1,4 +1,34 @@
 """
+#video 59
+#Decorators in Python
+
+def tryCatch(fx):
+    def mfx(*args, **kwargs):
+        try:
+            fx(*args, **kwargs)
+        except:
+            print('Something went wrong')
+    return mfx
+
+def greet(fx):
+    def mfx(*args, **kwargs):
+        print('Decorator Start!')
+        fx(*args, **kwargs)
+        print('Decorator End')
+    return mfx
+
+@greet
+def hello():
+    print('Hello World')
+
+@tryCatch
+@greet
+def add(a, b):
+    print(a + b)
+
+hello()
+add(1, 3)
+
 #video 58
 #Constructors in Python
 class Person:
