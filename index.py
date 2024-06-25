@@ -1,4 +1,17 @@
 """
+#video 57
+#Classes and Objects in Python
+class Person:
+    name = 'Harry'
+    occupation = 'Software Developer'
+    netWorth = 10000000
+    def info(self):
+        return f"Name: {self.name}\nOccupation: {self.occupation}\nNet Worth= {self.netWorth}"
+    
+a = Person()
+a.name = 'Harry Bhai'
+print(a.info())
+
 #video 56
 #Introduction to OOPs in Python 
 #theory
