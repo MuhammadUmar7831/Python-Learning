@@ -1,4 +1,26 @@
 """
+#video 60
+#Getters and Setters in Python
+
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+    @property
+    def ten_x_value(self):
+        return self.value * 10
+    @ten_x_value.setter
+    def ten_x_value(self, value):
+        self.value = value / 10
+    def info(self):
+        print(f"Value is {self.value}")
+
+
+a = MyClass(10)
+a.info()
+a.ten_x_value = 10
+print(a.ten_x_value)
+print(a.value)
+
 #video 59
 #Decorators in Python
 
