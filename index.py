@@ -1,4 +1,23 @@
 """
+#video 66
+#Instance variables vs Class variables in Python
+
+class Employee:
+    company_name = 'BICE'
+    no_employees = 0
+    def __init__(self, name):
+        self.name = name
+        Employee.no_employees += 1
+    
+    def info(self):
+        print(f"Compnay: {self.company_name}\n#Employees {Employee.no_employees}\nName: {self.name}")
+
+a = Employee('Umar')
+b = Employee('Ali')
+a.company_name = "LAVI"
+a.info()
+b.info()
+
 #cideo 65
 #Static Methods in Python
 class Math:
