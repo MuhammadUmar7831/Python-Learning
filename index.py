@@ -1,4 +1,23 @@
 """
+#cideo 65
+#Static Methods in Python
+class Math:
+    def __init__(self, num):
+        self.num = num
+    
+    def addToNum(self, val):
+        self.num = self.num + val
+    
+    @staticmethod
+    def sum(a, b):
+        return a + b
+    
+a = Math(5)
+a.addToNum(5)
+print(a.num)
+print(a.sum(1, 2))
+
+
 #video 64
 #Exercise 6
 
