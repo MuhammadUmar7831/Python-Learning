@@ -1,4 +1,19 @@
 """
+#video 58
+#Constructors in Python
+class Person:
+    def __init__(self, name, occupation):
+        self.name = name
+        self.occupation = occupation
+    def info(self):
+        return f"Name: {self.name}\nOccupation: {self.occupation}"
+    
+a = Person("Muhammad Umar", "Software Developer")
+b = Person("Shaheerah Khaild", "HR")
+
+print(a.info())
+print(b.info())
+
 #video 57
 #Classes and Objects in Python
 class Person:
