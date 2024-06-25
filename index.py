@@ -1,4 +1,29 @@
 """
+#video 61
+#Inheritance in Python
+
+class Employee:
+    def __init__(self, name, id):
+        self.id = id
+        self.name = name
+    def showDetails(self):
+        print(f"ID: {self.id}\nName: {self.name}")
+
+class Programmer(Employee):
+    def __init__(self, name, id, lang):
+        Employee.__init__(self, name, id)
+        self.lang = lang
+    def showDetails(self):
+        Employee.showDetails(self)
+        print(f"Language: {self.lang}")
+
+
+a = Programmer("Muhammad Umar", 7831, "C++")
+a.showDetails()
+
+b = Employee("Shaheerah Khaild", 5231)
+b.showDetails()
+
 #video 60
 #Getters and Setters in Python
 
