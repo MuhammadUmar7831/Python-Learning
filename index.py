@@ -1,4 +1,7 @@
 """
+#video 67
+#shouts and solution of exercise 6
+
 #video 66
 #Instance variables vs Class variables in Python
 
