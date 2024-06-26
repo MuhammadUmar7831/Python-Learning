@@ -1,4 +1,19 @@
 """
+#video 68
+#Exercise 7 - Clear the Clutter
+import os
+
+def clearClutter(ext):    
+    clutter_files = os.listdir('clutter')
+    index = 0
+    for file in clutter_files:
+        split_name = os.path.splitext(file)
+        if ext == split_name[1]:
+            os.rename(f'clutter/{file}', f'clutter/{index}{split_name[1]}' )
+            index = index + 1
+
+clearClutter('.mp3')
+
 #video 67
 #shouts and solution of exercise 6
 
