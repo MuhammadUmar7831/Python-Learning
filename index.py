@@ -1,4 +1,23 @@
 """
+#video 70
+#Class Methods as Alternative Constructors in Python
+class Employee:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    @classmethod
+    def dashStrConstructor(self, dashStr):
+        return self(dashStr.split('-')[0], dashStr.split('-')[1])
+
+a = Employee("emp1", 19)
+b = Employee.dashStrConstructor("emp2-34")
+c = Employee.dashStrConstructor("emp3-28")
+print(a.name, a.age)
+print(b.name, b.age)
+print(c.name, c.age)
+
+
 #video 69
 #Class Methods in Python
 
