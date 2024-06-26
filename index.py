@@ -1,4 +1,23 @@
 """
+#video 69
+#Class Methods in Python
+
+class Employee:
+    company = "Apple"
+    def __init__(self, name):
+        self.name = name
+    def show(self):
+        print(f"Name: {self.name}\nCompany: {self.company}")
+    @classmethod
+    def changeCo(self, co):
+        self.company = co
+
+a = Employee("Employee 1")
+a.show()
+a.changeCo("Tesla")
+a.show()
+print(Employee.company)
+
 #video 68
 #Exercise 7 - Clear the Clutter
 import os
