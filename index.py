@@ -1,4 +1,20 @@
 """
+#video 75
+#Exercise 7 - Clear the Clutter - Solution 
+import os
+
+def clearClutter(ext):    
+    clutter_files = os.listdir('clutter')
+    index = 0 #logic chagen ends with used
+    for file in clutter_files:
+        if file.endswith(ext):
+            os.rename(f'clutter/{file}', f'clutter/{index}{ext}' )
+            index = index + 1
+
+clearClutter('.mp3')
+clearClutter('.png')
+
+
 #video 74
 #Method Overriding in Python
 
