@@ -1,4 +1,77 @@
 """
+#video 73
+#Magic/Dunder Methods in Python
+
+from typing import Any
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def __len__(self): #return length of object
+        return len(self.name) + self.age
+    
+    def __str__(self):
+        return "instant vars: name<string>, age<int>, methods: no methods"
+    
+    def __repr__(self):
+        return f"Representation Person('{self.name}', {self.age})"
+    
+    def __call__(self, name, age):
+        self.name = name
+        self.age = age
+        return self
+
+p = Person("Muhammad Umar", 19)
+print(len(p))
+print(p)
+p("You", 20)
+print(p.name)
+print(p.age)
+
+#video 72
+#Super Keyword in Python
+
+class Employee:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+    def info(self):
+        print(self.name)
+        print(self.id)
+
+class Programmer(Employee):
+    def __init__(self, name, id, lang):
+        self.lang = lang
+        super().__init__(name, id)
+    def info(self):
+        super().info()
+        print(self.lang)
+
+you = Employee('You', 1122)
+me = Programmer('Umar', 7831, 'Python')
+you.info()
+me.info()
+
+#video 71
+#dir, __dict__ and help method in Python
+
+x = [1, 2, 3]
+# print(dir(x))
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.hobby = 'religious content creation'
+
+p = Person('Muhammad Umar', 19)
+print(p.__dict__)
+print(help(Person))
+print(help(p))
+
 #video 70
 #Class Methods as Alternative Constructors in Python
 class Employee:
