@@ -1,4 +1,36 @@
 """
+#video 80
+#Multilevel Inheritance in Python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def show_detail(self):
+        print(f"{self.name}\n{self.age}")
+
+class Employee(Person):
+    def __init__(self, name, age, qualification):
+        super().__init__(name, age)
+        self.qualification = qualification
+    
+    def show_detail(self):
+        super().show_detail()
+        print(f"{self.qualification}")
+
+class Programmer(Employee):
+    def __init__(self, name, age, qualification, lang):
+        super().__init__(name, age, qualification)
+        self.lang = lang
+    
+    def show_detail(self):
+        super().show_detail()
+        print(f"{self.lang}")
+
+me = Programmer("Muhammad Umar", 19, "Undergrad", ["C++", "python", "java"])
+me.show_detail()
+
+
 #video 79
 #Multiple Inheritance in Python
 
