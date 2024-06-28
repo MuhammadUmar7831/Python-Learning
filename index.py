@@ -1,4 +1,14 @@
 """
+#video 76
+#Exercise 8 - Merge the PDF
+from pypdf import PdfWriter
+
+merger = PdfWriter()
+for pdf in ["pdfs/1.pdf", "pdfs/2.pdf"]:
+    merger.append(pdf)
+merger.write("pdfs/merged.pdf")
+merger.close()
+
 #video 75
 #Exercise 7 - Clear the Clutter - Solution 
 import os
