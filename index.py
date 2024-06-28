@@ -1,4 +1,58 @@
 """
+#video 77
+#Operator Overloading in Python
+
+class Complex:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    
+    def __str__(self):
+        return f"{self.a}+{self.b}i"
+
+    def __add__(self, vec):
+        return Complex(self.a + vec.a, self.b + vec.b)
+
+    def __sub__(self, vec):
+        return Complex(self.a - vec.a, self.b - vec.b)
+
+    def __mul__(self, vec):
+        return Complex(self.a * vec.a, self.b * vec.b)
+
+    def __truediv__(self, vec):
+        a = round(self.a / vec.a)
+        b = round(self.b / vec.b)
+        return Complex(a, b)
+    
+    def __eq__(self, vec):
+        return self.a == vec.a and self.b == vec.b 
+
+    def __ne__(self, vec):
+        return self.a != vec.a or self.b != vec.b 
+
+    def __le__(self, vec):
+        return self.a <= vec.a and self.b <= vec.b 
+
+    def __ge__(self, vec):
+        return self.a >= vec.a and self.b >= vec.b 
+
+    def __invert__(self):
+        return Complex(self.b, self.a)
+
+comp1 = Complex(2, 5)
+comp2 = Complex(6, 5)
+
+print(comp1 + comp2)
+print(comp1 - comp2)
+print(comp1 * comp2)
+print(comp1 / comp2)
+print(comp1 == comp2)
+print(comp1 != comp2)
+print(comp1 <= comp2)
+print(comp1 >= comp2)
+print(~comp1)
+
+
 #video 76
 #Exercise 8 - Merge the PDF
 from pypdf import PdfWriter
