@@ -1,4 +1,23 @@
 """
+#video 79
+#Multiple Inheritance in Python
+
+class Employee:
+    def __init__(self):
+        print("Employee")
+        
+class Dancer:
+    def __init__(self):
+        print("Dancer")
+
+class DancerEmployee(Employee, Dancer):
+    def __init__(self):
+        super().__init__()
+
+de = DancerEmployee()
+print(DancerEmployee.mro())
+
+
 #video 78
 #Single Inheritance in Python
 
