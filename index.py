@@ -1,4 +1,32 @@
 """
+#video 78
+#Single Inheritance in Python
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+class Dog(Animal):
+    def bark(self):
+        print("Bhaow Bhaow")
+        
+class Cat(Animal):
+    def meow(self):
+        print("Meow Meow")
+
+class Lion(Animal):
+    def roar(self):
+        print("grraaaauuuu")
+
+doggy  = Dog('doggy')
+kitty  = Cat('kitty')
+king  = Lion('king')
+
+doggy.bark()
+kitty.meow()
+king.roar()
+
+
 #video 77
 #Operator Overloading in Python
 
