@@ -1,4 +1,25 @@
 """
+#video 84
+#Time Module in Python
+import time
+
+def useWhile(end):
+    i = 0
+    while i < end:
+        i += 1
+def useFor(end):
+    for i in range(end):
+        True
+
+init = time.time()
+useWhile(900000000)
+print(time.time() - init) #34.71935701370239
+
+init = time.time()
+useFor(900000000)
+print(time.time() - init)#20.57078456878662
+
+
 #video 83
 #Exercise 9 - Shoutouts to Everyone
 import win32com.client
