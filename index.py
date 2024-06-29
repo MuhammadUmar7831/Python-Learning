@@ -1,4 +1,13 @@
 """
+#video 83
+#Exercise 9 - Shoutouts to Everyone
+import win32com.client
+speaker = win32com.client.Dispatch("SAPI.SpVoice")
+l = ["Muhammad Umar", "Yaseen Mubasher", "Vaibahv Shrivastav", "Sahil Kukreja"]
+for name in l:
+    speaker.Speak(name)
+
+
 #video 82
 #Exercise 8 - Merge the Pdf Solution in Python 
 from pypdf import PdfWriter
