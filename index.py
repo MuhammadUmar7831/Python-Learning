@@ -1,4 +1,14 @@
 """
+#video 82
+#Exercise 8 - Merge the Pdf Solution in Python 
+from pypdf import PdfWriter
+
+merger = PdfWriter()
+for pdf in ["pdfs/1.pdf", "pdfs/2.pdf"]:
+    merger.append(pdf)
+merger.write("pdfs/merged.pdf")
+merger.close()
+
 #video 81
 #Hybrid and Hierarchical Inheritance in Python
 
