@@ -1,4 +1,26 @@
 """
+#video 81
+#Hybrid and Hierarchical Inheritance in Python
+
+class Parent:
+    pass
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+class Car:
+    pass
+
+class TwoWheeler:
+    pass
+
+#parent child are in hierarchical inheritance 
+#if we have more than 1 type of inheritance than it give us hybrid inheritance
+
+
 #video 80
 #Multilevel Inheritance in Python
 class Person:
